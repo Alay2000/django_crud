@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <form action="editrecord/{{member.id}}" method="post">
+            {% csrf_token %}
+            First Name: <br>
+            <input type="text" name="first" value="{{member.firstname}}">
+            <br><br>
+            Last Name: <br>
+            <input type="text" name="last" value="{{member.lastname}}">
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
